@@ -1,4 +1,3 @@
 function myFunction(){
-document.getElementById('demo').innerHTML
-
+    document.getElementById('demo').innerHTML = "Test Good!";
 }

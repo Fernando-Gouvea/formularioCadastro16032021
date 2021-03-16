@@ -4,32 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exemplo 10</title>
 </head>
 <body>
-
-    <h2>Objeto jacaScript</h2>
-
-    <p id = "demo"></p>
-
+    <h2>Objeto JavaScript</h2>
+    <p id="demo"></p>
     <script>
         var person = {
-            firstname : "André",
+            firstName : "André",
             lastName : "Silva",
             age : 33,
             eyeColor : "black",
             fullName : function(){
-return this.firstname +" "+ this.lastName;
-
+                return this.firstName + " " + this.lastName;
             }
         };
-
         document.getElementById("demo").innerHTML = 
-        "FirstName: " + person.firstname +"<br>"+"LastName: "+ person.lastName; 
-
-        document.getElementById("demo1").innerHTML = 
-        "FullName: " + person.fullName(); 
+        "Nome: " + person['firstName'] + " Inteiro: " + person.fullName();
     </script>
-    
 </body>
 </html>
