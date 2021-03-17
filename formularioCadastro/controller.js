@@ -1,3 +1,28 @@
+function calcSalary(){
+    var salary = document.getElementById("Salario").value;
+    if (salary>10000){
+        alert("Necessario declarar imposto de renda!!!");       
+    }
+}
+
+function estadoCivil(){
+    var eCivil = document.getElementById("eCivil").value;
+    if (eCivil === 'casado'){
+        alert("Necessario enviar documentação do conjuge");  
+    }
+
+}
+
+function cadastrar(){
+    var idade = document.getElementById("Idade").value;
+    if (idade < 18){
+        alert("Não é permitido o cadastro idade menor que 18 anos!!!");  
+    }
+    else window.print();
+    
+}
+
+
 const url = 'https://viacep.com.br/ws/$cep/json/';
 
 function findCEP(){

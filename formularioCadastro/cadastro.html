@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo 14</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1> <ins>Cadastro Funcionarios</ins></h1>
+    <h1> <ins>Cadastro de Funcionários</ins></h1>
     <p>Para cadastrar preencha os campos <br> com os dados dos funcionarios</p>
 
 
@@ -17,57 +18,57 @@
             <table>
                 <tr>
                     <th>id</th>
-                    <td><input type="text" id="id" name="id"placeholder="id" size="5"></td>
+                    <td><input style="background: black; color: white;" type="text" id="id" name="id"placeholder="id" size="5"></td>
 
                     <th>Nome</th>
-                    <td><input type="text" id="Nome" name="Nome"placeholder="Nome" size="50"></td>
+                    <td><input style="background: black; color: white;" type="text" id="Nome" name="Nome"placeholder="Nome" size="50"></td>
                
                     <th> Telefone</th>
-                    <td><input type="tel" id="Telefone" name="Telefone"placeholder="Telefone" size="12"></td>
+                    <td><input style="background: black; color: white;" type="tel" id="Telefone" name="Telefone"placeholder="Telefone" size="12"></td>
               
                 </tr>
 
             
                 <tr>
                     <th>Salario</th>
-                    <td><input type="text" id="Salario" name="Salario"placeholder="Salario" size="5"></td>
+                    <td><input style="background: black; color: white;" type="text" id="Salario" name="Salario"placeholder="Salario" size="5" oninput="calcSalary()"></td>
 
                     <th>Est. Civil</th>
-                    <td><input type="text" id="eCivil" name="eCivil"placeholder="eCivil" size="10"></td>
+                    <td><input style="background: black; color: white;" type="text" id="eCivil" name="eCivil"placeholder="eCivil" size="10" oninput="estadoCivil()"></td>
                
                     <th> Idade</th>
-                    <td><input type="text" id="Idade" name="Idade"placeholder="Idade" size="12"></td>
+                    <td><input style="background: black; color: white;" type="text" id="Idade" name="Idade"placeholder="Idade" size="12"></td>
                 </tr>
               
                 <tr>
                     <th>CEP</th>
-                    <td><input type="text" id="cep" name="cep" placeholder="CEP" size="12"> </td>
+                    <td><input style="background: black; color: white;" type="text" id="cep" name="cep" placeholder="CEP" size="12" oninput="findCEP()"> </td>
                     
                      <th>Logradouro</th>
-                     <td><input type="text" id="logradouro" name="lograduro" placeholder="Logradouro"></td>
+                     <td><input style="background: black; color: white;" type="text" id="logradouro" name="lograduro" placeholder="Logradouro"></td>
+                     
+                     <th>Numero</th>
+                     <td><input style="background: black; color: white;" type="text"  id="numero" name="numero" size="2" ></td>
+                   
                     </tr>
                     <tr>
                         <th>Bairro</th>
-                        <td><input type="text" id="bairro" name="bairro" placeholder="Bairro"></td>
+                        <td><input style="background: black; color: white;" type="text" id="bairro" name="bairro" placeholder="Bairro"></td>
                         
                         <th>Cidade</th>
-                        <td><input type="text" id="cidade" name="cidade" placeholder="Cidade"></td>
+                        <td><input  style="background: black; color: white;" type="text" id="cidade" name="cidade" placeholder="Cidade"></td>
                         
                         <th>Estado (UF)</th>
-                        <td><input type="text" id="uf" name="uf" placeholder="UF" size="2"></td>
-                     </tr>
+                        <td><input style="background: black; color: white;" type="text" id="uf" name="uf" placeholder="UF" size="2"></td>
+                     </tr>             
                     
-                     
-                   
-                    
-                    <td><input type="button" value="Consultar" onclick="findCEP()"></td>
                 </tr>
             </table>              
-              
-                
-            </table>
+         
         </form>
     </div>
+    <button onclick="cadastrar()">Imprimir</button>
+  
 </body>
-<script src="cep.js"></script>
+<script src="controller.js"></script>
 </html>

@@ -1,0 +1,30 @@
+body {
+
+    background-image: url(https://osayk.com.br/wp-content/uploads/2016/08/contratar-funcionario-2-1080x567.jpg);
+}
+
+h1 {
+    font-size: 300%;
+    color: rgb(255, 255, 255);
+    font-family:cursive;
+}
+p {
+    font-size: 150%;
+    color: rgb(255, 255, 255);
+    font-family:cursive;
+}
+
+th{
+    font-family:cursive;
+    color: white;
+}
+
+button{
+
+    border-bottom-color: white;
+    background-color: black;
+    color:white;
+    font-family:cursive;
+    font-size: 150%;
+}
+    
